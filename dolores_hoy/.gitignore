@@ -1,0 +1,19 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+.DS_Store
+
+# Secretos: JAMAS al repositorio
+secrets.json
+*.env
+.env*
+*.jks
+*.keystore
+key.properties
