@@ -1,18 +1,2 @@
-# dolores_hoy
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-<img width="623" height="990" alt="image" src="https://github.com/user-attachments/assets/8b5f6642-6b93-4f6c-be7f-f59a4c20eb7c" />
+#Ronda 0 · Preparar el taller 
+<img width="385" height="935" alt="image" src="https://github.com/user-attachments/assets/e30b92b3-2d01-4ad6-abac-63cd4d91fbac" />
