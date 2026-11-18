@@ -18,14 +18,6 @@ Imagina el tablero de información de la plaza de Dolores Hidalgo: te dice qué 
 
 
 
-##  Características
-
--  Un solo cliente HTTP reutilizable (`ClienteSeguro`) para las 5 APIs.
--  Pruebas con `MockClient`: sin internet y sin gastar cupo.
--  **Seguridad aplicada:** HTTPS obligatorio, claves fuera del código, validación de entradas y salidas, límites de tamaño y de tiempo, errores que no filtran información y logs sin secretos.
--  **Resiliencia:** si una API se cae, las otras cuatro siguen funcionando.
--  Las 5 peticiones salen al mismo tiempo (`Future.wait`).
-
 ##  Tecnologías
 
 - [Flutter](https://flutter.dev) / Dart (SDK `>=3.0.0 <4.0.0`)
