@@ -1,14 +1,8 @@
 # Dolores Hoy
 
-Proyecto hecho en Flutter para mostrar información útil de Dolores Hidalgo.
+Dolores Hoy es una aplicación de Flutter que muestra información de Dolores Hidalgo.
 
-La aplicación consulta cinco servicios:
-
-- Clima.
-- Tipo de cambio.
-- Días festivos.
-- Información de Wikipedia.
-- Imagen del día de la NASA.
+Consulta clima, tipo de cambio, días festivos, Wikipedia y la imagen del día de la NASA.
 
 ## Captura de la aplicación
 
@@ -21,16 +15,22 @@ flutter pub get
 flutter run
 ```
 
-## Pruebas
-
-Usé el ciclo rojo y verde. Primero dejé una función sin hacer para comprobar que apareciera el error y después ejecuté el proyecto terminado.
+Para ejecutar la prueba:
 
 ```bash
 flutter test
 ```
 
-| Prueba con error | Prueba terminada |
-|---|---|
-| ![Error real en la terminal de VS Code](capturas/tdd_rojo_error.png) | ![Prueba aprobada en la terminal de VS Code](capturas/pruebas_vscode.png) |
+## Todas las pruebas
+
+Se ejecutó la prueba disponible en el repositorio:
+
+1. La prueba básica de interfaz comprueba que el contador cambia correctamente.
 
 Resultado final: **1 prueba aprobada**.
+
+## Capturas reales de la prueba
+
+| Fase roja | Fase verde |
+|---|---|
+| ![Error real en la terminal de VS Code](capturas/tdd_rojo_error.png) | ![Prueba aprobada en la terminal de VS Code](capturas/pruebas_vscode.png) |
