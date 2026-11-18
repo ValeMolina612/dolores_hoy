@@ -1,4 +1,4 @@
-# 🌤️ Dolores Hoy
+#  Dolores Hoy
 
 Tablero en **Flutter** que consume **5 APIs gratuitas** con buenas prácticas de seguridad, desarrollado con **TDD** (Desarrollo Guiado por Pruebas).
 
@@ -16,41 +16,34 @@ Tablero en **Flutter** que consume **5 APIs gratuitas** con buenas prácticas de
 
 Imagina el tablero de información de la plaza de Dolores Hidalgo: te dice qué clima hace, a cuánto está el dólar, cuándo es el próximo día festivo, algo de historia del lugar y la foto astronómica del día. Cinco datos, cinco fuentes distintas, todas servicios gratuitos de internet (APIs).
 
-## 🌐 Las 5 APIs
 
-| # | API | Qué muestra | Clave |
-|:-:|-----|-------------|:-----:|
-| 1 | [Open-Meteo](https://open-meteo.com) | Clima actual de Dolores Hidalgo | No |
-| 2 | [Frankfurter](https://frankfurter.dev) | Tipo de cambio MXN / USD / EUR | No |
-| 3 | [Nager.Date](https://date.nager.at) | Próximos días festivos de México | No |
-| 4 | [Wikipedia (es)](https://es.wikipedia.org) | Resumen de un tema del usuario | No |
-| 5 | [NASA APOD](https://api.nasa.gov) | Foto astronómica del día | **Sí** |
 
-## ✨ Características
+##  Características
 
-- 🔌 Un solo cliente HTTP reutilizable (`ClienteSeguro`) para las 5 APIs.
-- 🧪 Pruebas con `MockClient`: sin internet y sin gastar cupo.
-- 🔒 **Seguridad aplicada:** HTTPS obligatorio, claves fuera del código, validación de entradas y salidas, límites de tamaño y de tiempo, errores que no filtran información y logs sin secretos.
-- 🛟 **Resiliencia:** si una API se cae, las otras cuatro siguen funcionando.
-- ⚡ Las 5 peticiones salen al mismo tiempo (`Future.wait`).
+-  Un solo cliente HTTP reutilizable (`ClienteSeguro`) para las 5 APIs.
+-  Pruebas con `MockClient`: sin internet y sin gastar cupo.
+-  **Seguridad aplicada:** HTTPS obligatorio, claves fuera del código, validación de entradas y salidas, límites de tamaño y de tiempo, errores que no filtran información y logs sin secretos.
+-  **Resiliencia:** si una API se cae, las otras cuatro siguen funcionando.
+-  Las 5 peticiones salen al mismo tiempo (`Future.wait`).
 
-## 🧰 Tecnologías
+##  Tecnologías
 
 - [Flutter](https://flutter.dev) / Dart (SDK `>=3.0.0 <4.0.0`)
 - [`http`](https://pub.dev/packages/http) (única dependencia)
 
-## 🗂️ Estructura del proyecto
+##  Estructura del proyecto
 
-```
+```& 'C:\Users\12251\Documents\Codex\2026-11-17\o\work\run_vscode_red_tests.ps1'
+
 dolores_hoy/
 ├── lib/
 │   ├── dominio/
-│   │   ├── excepciones.dart       # errores con mensajes seguros
-│   │   └── modelos.dart           # Clima, TipoCambio, Festivo, ResumenWiki, FotoAstronomica
+│   │   ├── excepciones.dart       
+│   │   └── modelos.dart          
 │   ├── datos/
-│   │   ├── cliente_seguro.dart    # ÚNICA puerta a internet (https, timeout, límites)
-│   │   ├── config_claves.dart     # claves que entran al compilar, nunca en el código
-│   │   └── servicios.dart         # una clase por API
+│   │   ├── cliente_seguro.dart    
+│   │   ├── config_claves.dart    
+│   │   └── servicios.dart        
 │   ├── presentacion/
 │   │   ├── tablero_viewmodel.dart
 │   │   └── pantalla_tablero.dart
@@ -61,24 +54,24 @@ dolores_hoy/
 │   ├── servicios_test.dart
 │   ├── seguridad_test.dart
 │   └── tablero_viewmodel_test.dart
-├── secrets.json                   # TU clave (NO se sube a git)
-└── secrets.json.example           # plantilla sin secretos (SÍ se sube)
+├── secrets.json                   
+└── secrets.json.example          
 ```
 
-## 🔁 Ciclo TDD
+##  Ciclo TDD
 
 1. 🔴 **ROJO**: escribe la prueba (debe fallar).
 2. 🟢 **VERDE**: escribe el código mínimo para que pase.
 3. 🔵 **REFACTOR**: ordena sin romper nada.
 
-## 🔐 Las dos ideas de seguridad del proyecto
+##  Las dos ideas de seguridad del proyecto
 
 1. **Nunca confíes** en lo que llega de internet ni en lo que escribe el usuario: se valida **siempre**.
 2. **Nunca escribas un secreto** donde pueda leerlo alguien más: ni en el código, ni en el repositorio, ni en los logs, ni en los mensajes de error.
 
 ---
 
-## 🚀 Cómo ejecutarlo
+##  Cómo ejecutarlo
 
 ```bash
 git clone https://github.com/ValeMolina612/dolores_hoy.git
@@ -105,7 +98,7 @@ Para la versión final verifica que `android/app/src/main/AndroidManifest.xml` t
 
 ---
 
-## 🧪 Desarrollo por rondas
+##  Desarrollo por rondas
 
 ### Ronda 0 · Preparar el taller
 
@@ -120,7 +113,7 @@ cp secrets.json.example secrets.json
 git status   # secrets.json NO debe aparecer
 ```
 
-> ⚠️ Si subes una clave por accidente, borrar el archivo **no basta**: queda en el historial de git. Hay que revocarla y generar una nueva.
+
 
 | .gitignore | secrets.json.example | git status limpio |
 |:-:|:-:|:-:|
@@ -224,7 +217,7 @@ flutter run --dart-define-from-file=secrets.json
 
 | config_claves.dart | 🔴 Pruebas de la NASA | modelos.dart (NASA) |
 |:-:|:-:|:-:|
-| <img src="capturas/21-config-claves.png" width="100%"> | <img src="capturas/22-test-nasa.png" width="100%"> | <img src="capturas/23-modelo-nasa.png" width="100%"> |
+| | <img src="capturas/22-test-nasa.png" width="100%"> | <img src="capturas/23-modelo-nasa.png" width="100%"> |
 
 | servicios.dart (NASA, parte 1) | servicios.dart (NASA) |
 |:-:|:-:|
