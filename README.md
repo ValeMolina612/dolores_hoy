@@ -115,7 +115,6 @@ git status   # secrets.json NO debe aparecer
 
 ### Ronda 1 · Conociendo las 5 APIs
 
-Cada API gratuita tiene límites y términos de uso que hay que respetar.
 
 | # | API | Datos | Clave |
 |:-:|-----|-------|:-----:|
