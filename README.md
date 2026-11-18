@@ -31,6 +31,10 @@ Resultado final: **1 prueba aprobada**.
 
 ## Capturas reales de la prueba
 
-| Fase roja | Fase verde |
-|---|---|
-| ![Error real en la terminal de VS Code](capturas/tdd_rojo_error.png) | ![Prueba aprobada en la terminal de VS Code](capturas/pruebas_vscode.png) |
+### Fase roja
+
+![Error real en la terminal de VS Code](capturas/tdd_rojo_error.png)
+
+### Fase verde
+
+![Prueba aprobada en la terminal de VS Code](capturas/pruebas_vscode.png)
