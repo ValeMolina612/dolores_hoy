@@ -270,28 +270,3 @@ La captura roja reproduce de forma controlada el momento previo a implementar un
 
 ---
 
-- [x] Ninguna clave está escrita en el código ni en el repositorio (`secrets.json` ignorado).
-- [x] Todas las peticiones usan `https` y el cliente rechaza `http`.
-- [x] Toda petición tiene timeout y límite de tamaño de respuesta.
-- [x] Las direcciones se construyen con `Uri.https` / `pathSegments`, no con texto pegado.
-- [x] Toda entrada del usuario se valida (vacío, longitud, caracteres de control).
-- [x] Toda salida del servidor se valida (tipos, `media_type`, URLs `https`).
-- [x] Los logs usan `redactar()`; `ConfigClaves` no imprime la clave completa.
-- [x] Los errores inesperados muestran un mensaje genérico al usuario.
-- [x] Una API caída no afecta a las demás.
-- [x] La clave tiene el menor privilegio posible y se puede revocar.
-
-## 🏁 Retos para seguir mejorando
-
-- 💾 Caché de 1 hora para funcionar sin conexión.
-- 🔁 Reintento con *backoff* exponencial (1 s, 2 s, 4 s) para errores 429 y de red.
-- 🛡️ Servidor proxy para que la clave de la NASA viva en el servidor y no en la app.
-- 🔑 Guardar el último tema buscado con `flutter_secure_storage`.
-- ➕ Agregar una sexta API gratuita aplicando todo el checklist.
-
-## 👩‍💻 Autoría
-
-Proyecto académico de **Desarrollo Móvil Integral** · Universidad Tecnológica del Norte de Guanajuato (UTNG).
-Docente: **Anastacio Rodríguez García**.
-
-> *La seguridad no es un archivo que se agrega al final; es un hábito en cada línea.*
