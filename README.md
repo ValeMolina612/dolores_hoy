@@ -12,7 +12,7 @@ Tablero en **Flutter** que consume **5 APIs gratuitas** con buenas prácticas de
 
 ---
 
-## 📖 Descripción
+##  Descripción
 
 Imagina el tablero de información de la plaza de Dolores Hidalgo: te dice qué clima hace, a cuánto está el dólar, cuándo es el próximo día festivo, algo de historia del lugar y la foto astronómica del día. Cinco datos, cinco fuentes distintas, todas servicios gratuitos de internet (APIs).
 
@@ -239,19 +239,5 @@ La pantalla es "tonta" a propósito: solo dibuja lo que dice el ViewModel. `Tarj
 
 ---
 
-## ✅ Checklist de seguridad
 
-## Evidencia de pruebas
-
-La ejecución automatizada terminó correctamente. Resultado: **todas las pruebas aprobadas**.
-
-### Ciclo TDD: rojo a verde
-
-La captura roja reproduce de forma controlada el momento previo a implementar una regla; la verde corresponde a la suite final del repositorio.
-
-| 🔴 Prueba que solicita código faltante | 🟢 Implementación terminada |
-|---|---|
-| ![Fase roja](capturas/tdd_rojo_error.png) | ![Pruebas aprobadas en la terminal de VS Code](capturas/pruebas_vscode.png) |
-
----
 
